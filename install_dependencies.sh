@@ -38,3 +38,4 @@ chsh -s $(which zsh)
 echo "source ~/.zshrc.local" >> ~/.zshrc
 echo "autoload promptinit && promptinit" >> ~/.zshrc.local
 echo "prompt hjem 8bit vimode" >> ~/.zshrc.local
+echo "source ~/z/z.sh" >> ~/.zshrc.local
