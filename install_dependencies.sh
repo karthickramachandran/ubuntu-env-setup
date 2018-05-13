@@ -1,13 +1,13 @@
 sudo apt update
-sudo apt install terminator
-sudo apt install vim
-sudo apt install mlocate
-sudo apt install zsh
-sudo apt install screen
-sudo apt install tmux
-sudo apt install git
-sudo apt install ssh
-sudo apt install aptitude
+sudo apt install terminator -y
+sudo apt install vim -y
+sudo apt install mlocate -y
+sudo apt install zsh -y
+sudo apt install screen -y
+sudo apt install tmux -y
+sudo apt install git -y
+sudo apt install ssh -y
+sudo apt install aptitude -y
 
 cd ~/
 mv dotfiles dotfiles_old
