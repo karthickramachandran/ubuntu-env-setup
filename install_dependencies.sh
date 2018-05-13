@@ -7,6 +7,7 @@ sudo apt install screen
 sudo apt install tmux
 sudo apt install git
 sudo apt install ssh
+sudo apt install aptitude
 
 cd ~/
 mv dotfiles dotfiles_old
