@@ -16,6 +16,8 @@ mv dotfiles dotfiles_old
 git clone https://github.com/karthickramachandran/dotfiles.git
 git clone https://github.com/karthickramachandran/prompt-hjem.git
 git clone https://github.com/karthickramachandran/z.git
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+
 
 # Install dotfile
 cd dotfiles
@@ -39,3 +41,4 @@ echo "source ~/.zshrc.local" >> ~/.zshrc
 echo "autoload promptinit && promptinit" >> ~/.zshrc.local
 echo "prompt hjem 8bit vimode" >> ~/.zshrc.local
 echo "source ~/z/z.sh" >> ~/.zshrc.local
+~/.fzf/install
