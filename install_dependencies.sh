@@ -8,6 +8,7 @@ sudo apt install tmux -y
 sudo apt install git -y
 sudo apt install ssh -y
 sudo apt install aptitude -y
+sudo apt install make cmake -y
 
 cd ~/
 mv dotfiles dotfiles_old
