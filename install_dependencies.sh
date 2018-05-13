@@ -24,8 +24,14 @@ touch .zshrc.local
 cd ~/prompt-hjem
 sudo make install
 
-
 # add cuda path
-echo "export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}" >> .zshrc.local
-echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\{LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> .zshrc.local
-echo "source ~/.zshrc.local" >> .zshrc
+echo "export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}" >> ~/.zshrc.local
+echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\{LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> ~/.zshrc.local
+
+# zsh configuration
+cd ~/
+touch .zshrc.local 
+chsh -s $(which zsh)
+echo "source ~/.zshrc.local" >> ~/.zshrc
+echo "autoload promptinit && promptinit" >> ~/.zshrc.local
+echo "prompt hjem 8bit vimode" >> ~/.zshrc.local
