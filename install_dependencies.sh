@@ -9,6 +9,7 @@ sudo apt install git -y
 sudo apt install ssh -y
 sudo apt install aptitude -y
 sudo apt install make cmake -y
+sudo apt install htop
 
 cd ~/
 mv dotfiles dotfiles_old
