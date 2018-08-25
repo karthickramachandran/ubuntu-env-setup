@@ -9,7 +9,8 @@ sudo apt install git -y
 sudo apt install ssh -y
 sudo apt install aptitude -y
 sudo apt install make cmake -y
-sudo apt install htop
+sudo apt install htop -y
+sudo apt install curl -y
 
 cd ~/
 mv dotfiles dotfiles_old
@@ -30,8 +31,8 @@ cd ~/prompt-hjem
 sudo make install
 
 # add cuda path
-echo "export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}" >> ~/.zshrc.local
-echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\{LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> ~/.zshrc.local
+#echo "export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}" >> ~/.zshrc.local
+#echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\{LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> ~/.zshrc.local
 
 # zsh configuration
 cd ~/
